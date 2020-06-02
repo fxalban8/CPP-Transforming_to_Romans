@@ -18,7 +18,14 @@ int main(){
 
 
 string giveRoman(int x){
-	int Th,H,Te,O;
+	string roman="";
+	int Th=0,H=0,Te=0,O=0;
+	Th=x/1000;
+	H=(x-Th*1000)/100;
+	Te=((x-Th*1000)-H*100)/10;
+	O=(((x-Th*1000)-H*100)-Te*10);
+	
+	
 
 }
 
