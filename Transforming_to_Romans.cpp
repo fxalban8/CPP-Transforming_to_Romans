@@ -69,7 +69,37 @@ string giveRoman(int x){
 
 	}
 
+	switch(Te){
+	
+		case 1:
+			roman=roman+"X";
+			break;
+		case 2:
+			roman=roman+"XX";
+			break;
+		case 3:
+			roman=roman+"XXX";
+			break;
+		case 4: 
+			roman=roman+"XL";
+			break;
+		case 5:
+			roman=roman+"L";
+			break;
+		case 6:
+			roman=roman+"LX";
+			break;
+		case 7:
+			roman=roman+"LXX";
+			break;
+		case 8:
+			roman=roman+"LXXX";
+			break;
+		case 9:
+			roman=roman+"XC";
+			break;
 
+	}
 
 	
 
