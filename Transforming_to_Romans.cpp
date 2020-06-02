@@ -1,18 +1,25 @@
 #include <iostream>
+#include <limits>
 using namespace std;
 
 
 string giveRoman(int x);
+void verifyInput(int& x);
 
 
 int main(){
 
 	int input;
-	cout<<"Enter a number from 1 to 3000: "<<endl;
+	cout<<"Enter a number from 1 to 3999: "<<endl;
 	cin>>input;
 
+		
+
+	while(!cin||input<1||input>3999){
+	verifyInput(input);
+	}
+
 	cout<<giveRoman(input)<<endl;	
-	
 	return 0;
 }
 
@@ -135,4 +142,9 @@ string giveRoman(int x){
 	return roman;
 }
 
-
+void verifyInput(int& x){
+	cin.clear();
+	cin.ignore(numeric_limits<streamsize>::max(),'\n');
+	cout<<"You can only enter numbers from 1 to 3999: "<<flush;
+	cin>>x;
+}
