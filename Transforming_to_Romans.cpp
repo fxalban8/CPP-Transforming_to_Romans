@@ -11,7 +11,7 @@ int main(){
 	cout<<"Enter a number from 1 to 3000: "<<endl;
 	cin>>input;
 
-		
+	cout<<giveRoman(input)<<endl;	
 	
 	return 0;
 }
