@@ -25,6 +25,52 @@ string giveRoman(int x){
 	Te=((x-Th*1000)-H*100)/10;
 	O=(((x-Th*1000)-H*100)-Te*10);
 	
+	switch(Th){
+		case 1:
+			roman="M";	
+			break;
+		case 2:
+			roman="MM";
+			break;
+		case 3: 
+			roman="MMM";
+			break;
+	}
+
+	switch(H){
+
+		case 1:
+			roman= roman+"C";
+			break;
+		case 2:
+			roman=roman+"CC";
+			break;
+		case 3:
+			roman=roman+"CCC";
+			break;
+		case 4:
+			roman= roman+"CD";
+			break;
+		case 5:
+			roman=roman+"D";
+			break;
+		case 6:
+			roman=roman+"DC";
+			break;
+		case 7: 
+			roman=roman+"DCC";
+			break;
+		case 8: 
+			roman=roman+"DCCC";
+			break;
+		case 9: 
+			roman=roman+"CM";
+			break;
+
+	}
+
+
+
 	
 
 }
